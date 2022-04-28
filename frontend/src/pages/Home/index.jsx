@@ -26,7 +26,7 @@ const data = {
   sectionLeft: {
     title: "Vote your favorite artist",
     description: "Transfer Bitcoin, Ethereum, and other crypto to a Rewards Account and you'll earn up to 13.5% in rewards annually, deposited monthly.",
-    text: "Learn more"
+    text: "read more"
   }
 }
 const Home = () => {
@@ -225,12 +225,12 @@ const Home = () => {
             About
           </Link> */}
           <img src="https://www.blockchain.com/static/img/wallet/wallet-buy-phone.png" alt="img"  className="" width="400"/>
-          <Section data={data} styleTitle ="text-gray-200  text-3xl sm:text-5xl text-center" styleDescription="text-gray-200 text-center text-sm sm:text-base "  styleBtn="text-blue-500 mt-4"/>  
+          <Section data={data.sectionRight} styleTitle ="text-gray-200  text-3xl sm:text-5xl text-center" styleDescription="text-gray-200 text-center text-sm sm:text-base "  styleBtn="text-blue-500 mt-4"/>  
         </div>
       </section>
        <div className="flex flex-col-reverse sm:flex-row-reverse px-4"  > 
           <img src="https://www.blockchain.com/static/img/wallet/wallet-interest-phone.png" alt="img"  className="" width="400"/>
-          <Section data={data} styleTitle ="text-gray-800  text-3xl sm:text-5xl text-center" styleDescription="text-gray-700 text-center text-sm sm:text-base"  styleBtn="text-blue-500 mt-4"/> 
+          <Section data={data.sectionLeft} styleTitle ="text-gray-800  text-3xl sm:text-5xl text-center" styleDescription="text-gray-700 text-center text-sm sm:text-base"  styleBtn="text-blue-500 mt-4"/> 
         </div>
     </main>
   );

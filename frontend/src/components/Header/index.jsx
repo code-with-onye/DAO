@@ -26,9 +26,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useGlobalStyles } from "../../styles";
 import { ReactComponent as Logo } from "../../assets/images/icons/logo.svg";
 import { AppContext } from "../../context/AppContext";
-import { ethers } from "ethers";
-import Web3Modal from "web3modal";
-import { providerOptions } from "./providerOptions";
+
 
 
 const Header = () => {
@@ -73,10 +71,7 @@ const Header = () => {
   }, [scrollHelper]);
 
 
-  const web3Modal = new Web3Modal({
-  cacheProvider: true, // optional
-  providerOptions // required
-});
+  
   return (
     <header
       
